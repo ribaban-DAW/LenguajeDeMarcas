@@ -1,0 +1,157 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #192062;
+	font-weight: bold;
+}
+
+nav {
+	position: relative;
+	background-color: #121867;
+	z-index: 1000;
+	padding: 10px;
+}
+
+nav a {
+	color: #dd2d7c;
+	text-decoration: none;
+	padding: 10px;
+}
+
+nav a:hover {
+	color: #ff73b2;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	margin-top: -18rem;
+}
+
+header img {
+	opacity: 0.75;
+	position: relative;
+	z-index: 10;
+	width: inherit;
+}
+
+header div {
+	position: absolute;
+	background-color: #121867;
+	padding: 30px;
+	border-radius: 10px;
+	z-index: 100;
+	padding-bottom: 15px;
+	bottom: 15%;
+	left: 45%;
+}
+
+header div p {
+	color: #dd2d7c;
+}
+
+header button {
+	background-color: #dd2d7c;
+	color: white;
+	padding: 10px;
+	border: none;
+	margin-left: 37px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+header button:hover {
+	background-color: #f33784;
+	cursor: pointer;
+}
+
+main {
+	justify-items: center;
+}
+
+section h1 {
+	text-align: center;
+}
+
+section .container {
+	padding: 30px;
+}
+
+section .container div {
+	display: inline-block;
+	padding: 20px 60px;
+}
+
+.container div:nth-child(2) {
+	border-top: 3px solid #dd2d7c;
+	border-bottom: 3px solid #dd2d7c;
+}
+
+.content {
+	margin-bottom: 400px;
+}
+
+.content aside {
+	float: left;
+	margin-top: 30px;
+}
+
+.content p {
+	max-width: 30rem;
+	padding: 10px;
+}
+
+.content div {
+	float: left;
+	margin-left: 2rem;
+}
+
+span {
+	color: #dd2d7c;
+	font-size: 40px;
+	border-right: 1px solid #121867;
+	border-bottom: 1px solid #121867;
+	padding-right: 10px;
+	margin-right: 10px;
+}
+
+.cakes {
+	clear: both;
+	margin-bottom: 350px;
+}
+
+.cakes img {
+	float: left;
+}
+
+.cakes img:nth-child(6) {
+	clear: both;
+}
+
+footer {
+	background-color: #121867;
+	clear: both;
+	padding: 40px;
+}
+
+footer section:first-child {
+	font-style: italic;
+	float: left;
+	margin-top: -20px;
+}
+
+footer section:last-child {
+	float: right;
+	margin-right: 100px;
+	margin-top: -20px;
+}
+
+footer p {
+	color: #dd2d7c;
+}
+
+footer > p {
+	text-align: center;
+	margin-top: -20px;
+}
