@@ -1,0 +1,9 @@
+div#divEjercicio1 * {
+  font-weight: bold;
+}
+
+div#ejercicio1 * {
+  font-weight: 100;
+  background-color: #FFFF66;
+  padding: 2px;
+}

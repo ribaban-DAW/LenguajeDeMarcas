@@ -1,0 +1,161 @@
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: Lato, sans-serif;
+}
+
+p {
+    font-family: 'Times New Roman', Verdana;
+}
+
+h1 {
+    background-color: #f1eb8a;
+}
+
+section:nth-child(even) {
+    background-color: #f5f1d4;
+}
+
+section:nth-child(odd) {
+    background-color: #ecd8a0;
+}
+
+h1,
+h2 {
+    padding: 30px 20px;
+}
+
+h2 {
+    padding-bottom: 0px;
+}
+
+ul {
+    padding: 20px;
+    margin-left: 40px;
+}
+
+h2+p {
+    background-color: rgb(177, 177, 177);
+    margin: 20px;
+    margin-bottom: 0;
+    padding: 20px;
+    font-style: italic;
+}
+
+p {
+    padding: 15px 20px;
+}
+
+/* Datos del libro */
+h2+ul>li {
+    list-style: square;
+}
+
+/* Contenido del libro */
+p+ul>li {
+    list-style: circle;
+}
+
+/* Ventas del libro */
+table {
+    margin-top: 20px;
+    margin-left: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td,
+th {
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+thead>tr,
+tbody>tr,
+tfoot>tr {
+    background-image: url("./imagenes/fondo_gris.gif");
+}
+
+tbody th {
+    background-image: none;
+    background-color: #e6f3ff;
+    text-align: left;
+}
+
+tbody tr {
+    background-image: none;
+}
+
+tbody tr:nth-child(odd),
+tfoot>tr>td:nth-child(3) {
+    background-color: #ffffa3;
+}
+
+tbody tr:nth-child(even),
+tfoot>tr>td:nth-child(2) {
+    background-image: none;
+    background-color: #ffffff;
+}
+
+/* 
+tfoot>tr>td:nth-child(3) {
+    background-color: none;
+    background-color: red;
+}
+
+tfoot>tr>td:nth-child(2) {
+    background-color: none;
+    background-color: red;
+} */
+
+tbody tr:hover,
+tfoot tr td:hover {
+    background-color: #ffff00;
+}
+
+/* Compra del libro */
+form {
+    background-color: #94d0e2;
+    margin: 20px;
+    padding: 1px;
+}
+
+fieldset>* {
+    margin-left: 13px;
+}
+
+legend {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+input+label {
+    margin: 0px;
+}
+
+div {
+    height: 20px;
+}
+
+section:last-child {
+    padding-bottom: 5px;
+}
+
+select {
+    width: 125px;
+}
+
+input:focus {
+    background-color: grey;
+    color: white;
+    font-size: 1.2em;
+}

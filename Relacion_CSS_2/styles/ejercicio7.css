@@ -1,0 +1,18 @@
+p.horrible {
+  font-family: "MV Boli", fantasy;
+  font-size: x-large;
+  line-height: 1.5em;
+  text-transform: capitalize;
+  text-decoration: blink;
+}
+
+p.menosHorrible {
+  line-height: 150%;
+  font-family: Papyrus, sans-serif;
+  font-size: xx-large;
+}
+
+p.menosHorrible::first-letter {
+  font-size: 48px;
+  color: blue;
+}

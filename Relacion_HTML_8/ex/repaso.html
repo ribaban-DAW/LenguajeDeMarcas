@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="En esta página encontrarás un resumen de todo lo visto hasta el momento"
+    />
+    <title>Repaso HTML</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 4px;
+        border-collapse: collapse;
+      }
+      .der {
+        text-align: right;
+        background-color: lightyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><img src="../img/home.svg" alt="Inicio" /></a>
+      <hr />
+    </header>
+    <main>
+      <h1>Resumen HTML</h1>
+      <section>
+        <h2>Formulario</h2>
+        <form>
+          <table>
+            <tr>
+              <td><label for="nombre">Nombre</label></td>
+              <td colspan="2"><label for="apellidos">Apellidos</label></td>
+            </tr>
+            <tr>
+              <td><input id="nombre" type="text" name="nombre" size="25" /></td>
+              <td colspan="2">
+                <input id="apellidos" type="text" name="apellidos" size="55" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3"><label for="direccion">Dirección</label></td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <input id="direccion" type="text" name="direccion" size="85" />
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 33%">
+                <label for="poblacion">Población</label>
+              </td>
+              <td style="width: 25%">
+                <label for="provincia">Provincia</label>
+              </td>
+              <td style="width: 42%">
+                <label for="codigo-postal">C.postal</label>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 33%">
+                <input id="poblacion" type="text" name="poblacion" size="25" />
+              </td>
+              <td style="width: 25%">
+                <select id="provincia" name="provincia">
+                  <option value="almeria">Almería</option>
+                  <option value="cadiz">Cádiz</option>
+                  <option value="cordoba">Córdoba</option>
+                  <option value="huelva">Huelva</option>
+                  <option value="jaen">Jaén</option>
+                  <option value="malaga">Málaga</option>
+                  <option value="sevilla">Sevilla</option>
+                </select>
+              </td>
+              <td style="width: 42%">
+                <input
+                  id="codigo-postal"
+                  type="text"
+                  maxlength="5"
+                  name="codigo-postal"
+                />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </section>
+      <section>
+        <h2>Tablas</h2>
+        <table>
+          <caption>
+            Películas más taquilleras del año
+          </caption>
+          <thead>
+            <th scope="col" colspan="2">Año</th>
+            <th scope="col">Título</th>
+            <th scope="col">Género</th>
+            <th class="der" scope="col">Presupuesto</th>
+            <th class="der" scope="col">Recaudado</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row" rowspan="3">2013-2015</td>
+              <td scope="row">2015</td>
+              <td>Furious 7</td>
+              <td>Acción</td>
+              <td class="der">190.000.000 €</td>
+              <td class="der">324.424.353 €</td>
+            </tr>
+            <tr>
+              <td scope="row">2014</td>
+              <td>American Sniper</td>
+              <td>Drama</td>
+              <td class="der">58.000.000 €</td>
+              <td class="der">34.417.536 €</td>
+            </tr>
+            <tr>
+              <td scope="row">2013</td>
+              <td>The Hunger Games: Catching Fire</td>
+              <td>Aventura</td>
+              <td class="der">130.000.000 €</td>
+              <td class="der">424.668.047 €</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td scope="row" colspan="4">Totales</td>
+              <td class="der">378.000.000 €</td>
+              <td class="der">1.097.509.935 €</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section>
+        <h2>Listas</h2>
+        <nav>
+          <ol>
+            <a href="#principales-protocolos">
+              <li>Principales protocolos</li>
+            </a>
+            <a href="#formas-de-conectarse">
+              <li>Formas de conectarse</li>
+            </a>
+          </ol>
+        </nav>
+        <article>
+          <h3 id="principales-protocolos">1. Principales protocolos</h3>
+          <ul>
+            <li>Transmisión de ficheros:</li>
+            <ul>
+              <li>FTP</li>
+            </ul>
+          </ul>
+          <ul>
+            <li>Correo electrónico:</li>
+            <ul>
+              <li>IMAP</li>
+              <li>POP</li>
+              <li>SMTP</li>
+            </ul>
+          </ul>
+        </article>
+        <article>
+          <h3 id="formas-de-conectarse">2. Formas de conectarse</h3>
+          <ul style="list-style-type: none; padding-left: 0px">
+            <li>Red Telefónica Conmutada (RTC)</li>
+            <ul style="list-style-type: none">
+              <li>
+                La línea telefónica de toda la vida. Para acceder a Internet es
+                necesario un módem.
+              </li>
+            </ul>
+            <li>Red Digital de Servicios Integrados (RDSI)</li>
+            <ul style="list-style-type: none">
+              <li>
+                Una línea telefónica especial. Para acceder a Internet es
+                necesario un módem RSDI.
+              </li>
+            </ul>
+            <li>Línea de Abonado Digital Asimétrica (ADSL)</li>
+            <ul style="list-style-type: none">
+              <li>
+                Se basa en la conversión de una línea RTC en una línea de alta
+                velocidad. Para acceder a Internet es necesario un módem ADSL.
+              </li>
+            </ul>
+            <li>Fibra Óptica</li>
+            <ul style="list-style-type: none">
+              <li>
+                Una línea de fibra óptica. Normalmente la fibra óptica no llega
+                hasta el usuario final, por lo que el término más apropiado es
+                Fibra híbrida coaxial.
+              </li>
+            </ul>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <h2>Mapa de imágenes</h2>
+        <figure>
+          <img
+            style="border: 1px solid black"
+            src="../img/sistemas_operativos.jpg"
+            alt="Imagen mostrando los sistemas operativos Windows, macOS y Linux"
+            title="Sistemas Operativos"
+            usemap="#sistemas-operativos"
+          />
+          <figcaption>Sistemas operativos Windows, macOS, Linux</figcaption>
+        </figure>
+        <map name="sistemas-operativos">
+          <area
+            shape="rect"
+            coords="25,20,140,95"
+            href="https://www.microsoft.com/es-es/windows"
+            target="_blank"
+            alt="Microsoft Windows"
+          />
+          <area
+            shape="rect"
+            coords="175,5,250,95"
+            href="https://www.apple.com/es"
+            target="_blank"
+            alt="macOS"
+          />
+          <area
+            shape="rect"
+            coords="118,85,190,190"
+            href="https://ubuntu.com/"
+            target="_blank"
+            alt="Linux"
+          />
+        </map>
+      </section>
+    </main>
+  </body>
+</html>

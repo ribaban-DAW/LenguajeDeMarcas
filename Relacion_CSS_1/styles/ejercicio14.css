@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+}
+
+nav {
+    height: 2.5rem;
+    border: 1px solid black;
+}
+
+ul {
+    padding-top: 0.75rem;
+    text-align: right;
+}
+
+li {
+    display: inline;
+    height: inherit;
+}
+
+main {
+    height: 10rem;
+}
+
+section {
+    background-color: #ededed;
+    color: #1a1a1a;
+}
+
+section:nth-child(odd) {
+    background-color: #1a1a1a;
+    color: #e5e5e5;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:visited {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: red;
+    color: white;
+}
+
+a:focus {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:active {
+    color: orange;
+    text-decoration: none;
+}
+
+h1 {
+    padding: 2rem 1rem;
+    padding-bottom: 0;
+}
+
+p {
+    padding: 1.5rem 1rem;
+    padding-top: 0;
+}
+
+h1+p {
+    padding-top: 1rem;
+}

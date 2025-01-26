@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tablas Gastos</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid rgb(131, 131, 131);
+        border-collapse: collapse;
+        text-align: center;
+        padding: 10px 40px;
+      }
+      thead {
+        background-color: #e7e7e7;
+      }
+      tbody {
+        font-style: italic;
+        color: #202020;
+      }
+      .even-row {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html"><img src="../img/home.svg" alt="Inicio" /></a>
+    <hr />
+    <table>
+      <thead>
+        <th scope="col">Compra</th>
+        <th scope="col">Ubicación</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Revisión</th>
+        <th scope="col">Coste (€)</th>
+      </thead>
+      <tbody>
+        <tr class="even-row">
+          <td>Corte de pelo</td>
+          <td>Peluquería</td>
+          <td>12/09</td>
+          <td>Gran idea</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Lañasa</td>
+          <td>Restaurante</td>
+          <td>12/09</td>
+          <td>Arrepentimiento</td>
+          <td>18</td>
+        </tr>
+        <tr class="even-row">
+          <td>Zapatos</td>
+          <td>Zapatería</td>
+          <td>13/09</td>
+          <td>Mucho arrepentimiento</td>
+          <td>65</td>
+        </tr>
+        <tr>
+          <td>Pasta de dientes</td>
+          <td>Supermercado</td>
+          <td>13/09</td>
+          <td>Bien</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+      <tfoot class="even-row">
+        <th colspan="4">SUM</th>
+        <th>118</th>
+      </tfoot>
+    </table>
+  </body>
+</html>

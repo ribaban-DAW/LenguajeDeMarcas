@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tablas Horario</title>
+    <style>
+      table,
+      td,
+      th {
+        font-size: 14px;
+        border: 1px solid #575757;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+      .prog {
+        background-color: #ff3d3d;
+      }
+      .badat {
+        background-color: #fffc3fd9;
+      }
+      .siinf {
+        background-color: #64dfc4;
+      }
+      .sasp {
+        background-color: #55ce55;
+      }
+      .daspgs {
+        background-color: #ffea2f;
+      }
+      .ipe {
+        background-color: #c52eeb;
+      }
+      .endes {
+        background-color: #ffa025;
+      }
+      .lmsgi {
+        background-color: #ff83ff;
+      }
+      .even-row {
+        background-color: #dddddd;
+      }
+      .odd-row {
+        background-color: #b4b4b4;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html"><img src="../img/home.svg" alt="Inicio" /></a>
+    <hr />
+    <table>
+      <tr style="background-color: #4cac4c">
+        <th scope="col" style="width: 10%">Hora</th>
+        <th scope="col" style="width: 10%">Lunes</th>
+        <th scope="col" style="width: 20%">Martes</th>
+        <th scope="col" style="width: 20%">Miércoles</th>
+        <th scope="col" style="width: 20%">Jueves</th>
+        <th scope="col" style="width: 20%">Viernes</th>
+      </tr>
+      <tr>
+        <th scope="row" class="odd-row">15:30 - 16:30</th>
+        <td rowspan="3" class="prog"><strong>Prog</strong>ramación</td>
+        <td rowspan="3" class="siinf">
+          <strong>Si</strong>stemas <strong>Inf</strong>ormáticos
+        </td>
+        <td rowspan="2" class="siinf">
+          <strong>Si</strong>stemas <strong>Inf</strong>ormáticos
+        </td>
+        <td class="daspgs">
+          <strong>D</strong>igitalización <strong>A</strong>plicada a los
+          <strong>S</strong>ectores <strong>P</strong>roductivos
+        </td>
+        <td rowspan="3" class="endes">
+          <strong>En</strong>tornos de <strong>Des</strong>arrollo
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="even-row">16:30 - 17:30</th>
+        <td rowspan="5" class="prog"><strong>Prog</strong>ramación</td>
+      </tr>
+      <tr>
+        <th scope="row" class="odd-row">17:45 - 18:45</th>
+        <td class="sasp">
+          <strong>S</strong>ostenibilidad <strong>A</strong>plicada
+          <strong>S</strong>ector <strong>P</strong>roductivo
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="even-row">18:45 - 19:45</th>
+        <td rowspan="3" class="badat">
+          <strong>Ba</strong>se de <strong>Dat</strong>os
+        </td>
+        <td rowspan="3" class="badat">
+          <strong>Ba</strong>se de <strong>Dat</strong>os
+        </td>
+        <td rowspan="3" class="ipe">
+          <strong>I</strong>tinerario <strong>P</strong>ersonal para la
+          <strong>E</strong>mpleabilidad
+        </td>
+        <td rowspan="3" class="lmsgi">
+          <strong>L</strong>enguaje de <strong>M</strong>arcas y
+          <strong>S</strong>istemas de <strong>G</strong>estión de
+          <strong>I</strong>nformación
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="odd-row">20:00 - 21:00</th>
+      </tr>
+      <tr>
+        <th scope="row" class="even-row">21:00 - 22:00</th>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario avanzado 1</title>
+    <style>
+      legend,
+      label {
+        font-weight: bold;
+      }
+      form {
+        border: 1px solid black;
+        width: 60em;
+        padding: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html"><img src="../img/home.svg" alt="Inicio" /></a>
+    <hr />
+    <form
+      action="../php/ejercicio20.php"
+      method="get"
+      enctype="multipart/form-data"
+    >
+      <fieldset>
+        <legend>Datos personales</legend>
+        <table>
+          <tr>
+            <td><label for="dni">D.N.I: </label></td>
+            <td><input id="dni" type="text" name="dni" size="10" /></td>
+            <td><label for="sexo">Sexo:</label></td>
+          </tr>
+          <tr>
+            <td><label for="nombre">Nombre:</label></td>
+            <td><input id="nombre" type="text" name="nombre" size="30" /></td>
+            <td>
+              <input
+                id="hombre"
+                type="radio"
+                name="sexo"
+                value="hombre"
+                checked
+              />
+              <label for="hombre">Hombre</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="apellidos">Apellidos:</label></td>
+            <td>
+              <input id="apellidos" type="text" name="apellidos" size="80" />
+            </td>
+            <td>
+              <input id="mujer" type="radio" name="sexo" value="mujer" />
+              <label for="mujer">Mujer</label>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Dirección</legend>
+        <table>
+          <tr>
+            <td><label for="calle">Calle/Avda.:</label></td>
+            <td colspan="3">
+              <input id="calle" type="text" name="calle" size="80" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="poblacion">Población:</label></td>
+            <td>
+              <input id="poblacion" type="text" name="poblacion" size="30" />
+            </td>
+            <td><label for="provincia">Provincia:</label></td>
+            <td>
+              <select id="provincia" name="provincia">
+                <option value="almeria">Almería</option>
+                <option value="cadiz">Cádiz</option>
+                <option value="cordoba">Córdoba</option>
+                <option value="huelva">Huelva</option>
+                <option value="jaen">Jaen</option>
+                <option value="malaga">Málaga</option>
+                <option value="sevilla">Sevilla</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Práctica en grupo</legend>
+        <table>
+          <tr>
+            <label for="archivo">Archivo:</label>
+            &nbsp;
+            <input id="archivo" type="file" name="archivo" />
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input
+                id="archivo-comprimido"
+                type="checkbox"
+                name="tipo-archivo"
+                value="archivo-comprimido"
+              />
+              <label style="font-weight: lighter" for="archivo-comprimido"
+                >Archivo comprimido</label
+              >
+              <input
+                id="archivo-encriptado"
+                type="checkbox"
+                name="tipo-archivo"
+                value="archivo-encriptado"
+              />
+              <label style="font-weight: lighter" for="archivo-encriptado"
+                >Archivo encriptado</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="descripcion">Descripción de la práctica</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <textarea
+                name="descripcion"
+                id="descripción"
+                cols="95"
+                rows="10"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <div style="display: flex; justify-content: center">
+        <!-- Si se elimina, no se puede enviar el formulario -->
+        <input type="submit" value="Submit query" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+[href^="https://google"],
+[href^="https://www.google"] {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  background-color: yellow;
+}

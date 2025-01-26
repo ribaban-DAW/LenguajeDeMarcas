@@ -1,0 +1,23 @@
+p {
+  border-right: 3px groove black;
+  border-bottom: 3px groove black;
+  background-repeat: no-repeat;
+  background-image: url("../img/blackhole.jpg");
+  background-position: center;
+  height: 100px;
+  width: 500px;
+  color: white;
+}
+
+body {
+  background-image: url("../img/blackhole.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+h1+h2 {
+  background-image: url("../img/Chopper.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: silver;
+}

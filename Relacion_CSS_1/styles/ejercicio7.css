@@ -1,0 +1,21 @@
+.borde {
+  border: 2px solid red;
+}
+
+h1.borde,
+h2.borde,
+h3.borde {
+  border: 2px solid blue;
+}
+
+h1.borde {
+  text-decoration: underline;
+}
+
+h2.borde {
+  font-style: italic;
+}
+
+h3.borde {
+  text-decoration: overline;
+}

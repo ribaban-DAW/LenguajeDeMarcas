@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario 3 POST</title>
+    <style>
+      form {
+        width: 20em;
+      }
+      input {
+        width: 13rem;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html"><img src="../img/home.svg" alt="Inicio" /></a>
+    <hr />
+    <form
+      action="../php/ejercicio24.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <fieldset>
+        <legend>Datos personales</legend>
+        <table>
+          <tr>
+            <td><label for="nombre">Nombre</label></td>
+            <td><input id="nombre" type="text" name="nombre" /></td>
+          </tr>
+          <tr>
+            <td><label for="apellidos">Apellidos</label></td>
+            <td><input id="apellidos" type="text" name="apellidos" /></td>
+          </tr>
+          <tr>
+            <td><label for="curso">Curso</label></td>
+            <td><input id="curso" type="text" name="curso" /></td>
+          </tr>
+          <tr>
+            <td><label for="nota">Nota</label></td>
+            <td>
+              <input id="nota" type="number" name="nota" min="0" max="10" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <input style="width: 100%" type="submit" />
+    </form>
+  </body>
+</html>

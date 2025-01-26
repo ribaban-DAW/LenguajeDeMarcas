@@ -1,0 +1,11 @@
+.pregunta {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #0000aa;
+}
+
+.respuesta {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: #555;
+}

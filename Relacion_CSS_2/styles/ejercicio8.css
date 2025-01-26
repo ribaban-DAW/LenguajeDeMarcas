@@ -1,0 +1,7 @@
+.desbordado {
+  border: 1px solid red;
+  border-width: thick;
+  background-color: silver;
+  height: 80px;
+  width: 700px;
+}

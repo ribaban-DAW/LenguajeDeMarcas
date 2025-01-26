@@ -1,0 +1,12 @@
+h2 {
+  border-top: 5px solid red;
+  border-bottom: 5px solid red;
+  background-color: beige;
+}
+
+h3 {
+  border-right: 10px dotted brown;
+  border-left: 10px dotted brown;
+  color: #999;
+  padding: 35px;
+}
