@@ -13,10 +13,39 @@ body {
 
 header {
     grid-area: header;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header div {
+    padding: 20px;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.content article {
+    border: 1px solid #aaaaaa;
+    border-radius: 30px;
+    text-align: center;
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.content h1 {
+    font-size: 1.5em;
 }
 
 footer {
+    padding: 20px;
     grid-area: footer;
+    border-top: 1px solid black;
     display: flex;
     justify-content: space-between;
 }
