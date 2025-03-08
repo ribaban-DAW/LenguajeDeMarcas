@@ -1,0 +1,190 @@
+* {
+  font-family: Righteous, cursive;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  padding-right: 0;
+}
+
+.azul {
+  color: #2783ec;
+}
+
+.icon {
+  margin-right: 0.6em;
+}
+
+.menu_item {
+  display: none;
+  margin-right: 0.3em;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #9c9abe;
+  color: white;
+}
+
+.main_text {
+  padding: 1em;
+}
+
+.main_text h1 {
+  padding: 1em 0em;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images img {
+  height: 100px;
+  width: 25%;
+}
+
+.hidden {
+  display: none;
+}
+
+.novedades {
+  padding: 1em;
+  background-color: white;
+}
+
+.novedades article {
+  padding: 1em 0;
+  background-color: #9c9abe;
+  border-radius: 10px;
+  margin: 1em 0;
+}
+
+.novedades article * {
+  padding: 0.6em 1em;
+}
+
+.novedades article p {
+  color: white;
+  font-style: italic;
+}
+
+@media screen and (min-width: 576px) {
+  nav {
+    display: flex;
+    gap: 1em;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .menu_item {
+    display: inline-block;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  section.main_text,
+  section.images {
+    width: 50%;
+  }
+
+  section.images img {
+    width: 50%;
+    height: 25%;
+  }
+
+  .novedades {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .novedades>* {
+    width: 25%;
+  }
+  
+  .novedades h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .novedades article {
+    width: 100%;
+  }
+  
+  .novedades article * {
+    padding: 0.2em 1em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .icon {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  section.images {
+    order: 1;
+  }
+
+  section.main_text {
+    order: 2;
+  }
+
+  section.images img {
+    height: 33%;
+    width: 33%;
+  }
+
+  .novedades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .novedades h2 {
+    width: initial;
+    margin-right: 2em;
+  }
+
+  .novedades article {
+    padding-top: 0;
+    margin-top: 0;
+    width: initial;
+    background-color: transparent;
+  }
+
+  .novedades article * {
+    padding: 0em 0.6em;
+  }
+
+  .novedades article h3 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .novedades article p {
+    color: black;
+    max-width: 25em;
+  }
+}
