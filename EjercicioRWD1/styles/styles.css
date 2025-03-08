@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+header {
+  padding: 2em;
+  padding-left: 1em;
+  background-color: purple;
+  border: 0.1em solid red;
+}
+
+aside {
+  padding: 0.7em;
+  padding-left: 1em;
+  background-color: cyan;
+  border: 0.1em solid red;
+}
+
+section {
+  background-color: gray;
+  padding: 1em;
+  color: black;
+  border: 0.1em solid red;
+}
+
+section h3 {
+  padding-bottom: 0.7em;
+  font-weight: normal;
+  color: inherit;
+}
+
+section p {
+  color: inherit;
+}
+
+footer {
+  padding: 1.5em;
+  text-align: center;
+  background-color: blue;
+  border: 0.1em solid red;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  main {
+    display: grid;
+    grid-template-areas:
+      "left section right"
+      ". section .";
+  }
+
+  aside:first-child {
+    grid-area: left;
+  }
+
+  aside:last-child {
+    grid-area: right;
+  }
+
+  section {
+    grid-area: section;
+  }
+
+  footer {
+    padding-top: 2.5em;
+  }
+}
