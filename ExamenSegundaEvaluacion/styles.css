@@ -173,7 +173,6 @@ header {
     }
   }
 
-  /* El grid no estoy seguro de por qué no se expande */
   .galeria {
     grid-template-areas: "img1 img2 img2"
       "img1 img2 img2"
@@ -183,12 +182,7 @@ header {
       "img5 img6 img6"
       "img7 img8 img9";
 
-
     img:nth-child(1) {
-      grid-row-start: 1;
-      grid-row-end: 3;
-      grid-column-start: 1;
-      grid-column-end: 2;
       grid-area: img1;
     }
 
@@ -223,5 +217,9 @@ header {
     img:nth-child(9) {
       grid-area: img9;
     }
+
+	img {
+		height: 100%;
+	}
   }
 }
