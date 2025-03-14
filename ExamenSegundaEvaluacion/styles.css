@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Righteous, cursive;
+}
+
+/* Esto porque lo pide el ejercicio, pero sin esto me resulta más bonito */
+body {
+  width: 90%;
+  margin: 0 5%;
+  margin-top: 20px;
+}
+
+/* Con una anchura de 510px se ve como en el pdf */
+
+header {
+  display: flex;
+  background-color: #9c9abe;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+  .logo {
+    img {
+      width: 7rem;
+    }
+  }
+
+  .menu-item {
+    padding: 0.5em;
+  }
+
+  .header-derecha {
+    display: none;
+  }
+}
+
+.portada {
+  img {
+    width: 100%;
+  }
+}
+
+.inf {
+  background-color: #c8c8c8;
+
+  .inf-text {
+
+    h1 {
+      padding-top: 1em;
+      padding-left: 0.8em;
+      font-size: 1.5em;
+    }
+
+    p {
+      padding: 1em 0;
+      padding-left: 1em;
+      margin-right: 1em;
+    }
+  }
+
+  .inf-img {
+    display: none;
+  }
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  justify-items: center;
+
+  img {
+    width: 75%;
+    padding: 0.3em;
+  }
+
+  /* Para que todos los elementos tengan el mismo padding tanto arriba como abajo */
+  img:first-child {
+    padding-top: .6em;
+  }
+
+  img:last-child {
+    padding-bottom: .6em;
+  }
+}
+
+/* Con anchura de 676px se ve como en el pdf */
+
+@media screen and (min-width: 576px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .inf {
+    display: flex;
+
+    .inf-text {
+      h1 {
+        padding-top: 1.2em;
+        padding-left: 0.8em;
+        font-size: 1em;
+      }
+
+      p {
+        padding: 0.6em 0;
+        padding-left: 1em;
+        font-size: .7em;
+      }
+    }
+
+    .inf-img {
+      padding: 1em .8em;
+      padding-right: 0em;
+      display: initial;
+
+      img {
+        width: 90%;
+        border: 0.3em solid white;
+      }
+    }
+  }
+
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: .5em;
+    padding: 1em 3.5em;
+
+    img,
+    img:first-child,
+    img:last-child {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    justify-items: space-around;
+
+    .header-derecha {
+      display: initial;
+      padding-right: 2em;
+    }
+
+  }
+
+  .inf {
+    .inf-text {
+      width: 50%;
+
+      h1 {
+        font-size: 1.4em;
+      }
+
+      p {
+        font-size: .9em;
+      }
+    }
+
+    .inf-img {
+      width: 50%;
+      padding: 2em 3em;
+      padding-left: 0;
+
+      img {
+        width: 100%;
+        border: .5em solid white;
+      }
+    }
+  }
+
+  /* El grid no estoy seguro de por qué no se expande */
+  .galeria {
+    grid-template-areas: "img1 img2 img2"
+      "img1 img2 img2"
+      "img3 img3 img4"
+      "img3 img3 img4"
+      "img5 img6 img6"
+      "img5 img6 img6"
+      "img7 img8 img9";
+
+
+    img:nth-child(1) {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-area: img1;
+    }
+
+    img:nth-child(2) {
+      grid-area: img2;
+    }
+
+    img:nth-child(3) {
+      grid-area: img3;
+    }
+
+    img:nth-child(4) {
+      grid-area: img4;
+    }
+
+    img:nth-child(5) {
+      grid-area: img5;
+    }
+
+    img:nth-child(6) {
+      grid-area: img6;
+    }
+
+    img:nth-child(7) {
+      grid-area: img7;
+    }
+
+    img:nth-child(8) {
+      grid-area: img8;
+    }
+
+    img:nth-child(9) {
+      grid-area: img9;
+    }
+  }
+}
