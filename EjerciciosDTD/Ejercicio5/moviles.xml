@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE moviles SYSTEM "moviles.dtd">
+<moviles>
+	<movil>
+		<modelo>ModElus</modelo>
+		<precio>300</precio>
+		<fabricante>Elfa Bricante</fabricante>
+		<color>Morado</color>
+	</movil>
+	<movil>
+		<modelo>ModHeladus</modelo>
+		<precio>1200</precio>
+		<fabricante>Unai Guana</fabricante>
+		<color>Rosa</color>
+	</movil>
+</moviles>

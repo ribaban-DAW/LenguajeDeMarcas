@@ -1,0 +1,6 @@
+<!ELEMENT moviles (movil+)>
+<!ELEMENT movil (modelo, precio, fabricante, color)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT fabricante (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
