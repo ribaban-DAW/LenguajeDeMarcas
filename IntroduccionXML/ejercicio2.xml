@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BandejaEntrada>
+	<Correo>
+		<Remitente>
+			<Nombre>Test</Nombre>
+			<Email>test@test.com</Email>
+		</Remitente>
+		<Destinatario>
+			<Nombre>Prueba</Nombre>
+			<Email>prueba@prueba.com</Email>
+		</Destinatario>
+		<Asunto>Saludos</Asunto>
+		<Cuerpo>
+			<Parrafo>Hola ¿Qué tal?</Parrafo>
+			<Parrafo>Hace mucho que no escribes. A ver si llamas y quedamos pronto</Parrafo>
+			<Parrafo>Un saludo</Parrafo>
+		</Cuerpo>
+	</Correo>
+</BandejaEntrada>

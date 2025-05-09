@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cartelera>
+	<Pelicula>
+		<Titulo>AQUELLAS JUERGAS UNIVERSITARIAS</Titulo>
+		<TituloOriginal>'Old School'</TituloOriginal>
+		<Pais>EE UU</Pais>
+		<Año>2003</Año>
+		<Duracion>93 min</Duracion>
+		<Director>Todd Phillips</Director>
+		<Interpretes>
+			<Interprete>Will Ferrell</Interprete>
+			<Interprete>Luke Wilson</Interprete>
+			<Interprete>Vince Vaughn</Interprete>
+			<Interprete>Jeremy Piven</Interprete>
+			<Interprete>Juliette Lewis</Interprete>
+			<Interprete>Sean William Scott</Interprete>
+		</Interpretes>
+		<Descripcion>Mitch, Frank y Beanie son tres amigos treintañeros cuyas vidas no son exactamente lo que esperaban. Mitch tiene una novia ninfómana que se mete en la cama con el primero que agarra. Frank se ha casado y su matrimonio nada tiene que ver con las juergas salvajes que organizaban años atrás. Y Beanie es un padre de familia que se muere por recuperar su alocada juventud. Pero las cosas cambian cuando Beanie sugiere que creen su propia fraternidad, en la nueva casa que Mitch tiene junto al campus de la universidad. Una ocasión para revivir tiempos gloriosos, hacer nuevos amigos y de volver a sus viejas, salvajes y desmadradas juergas de estudiantes.</Descripcion>
+		<Enlace>http://www.oldschool-themovie.com/</Enlace>
+		<Generos>
+			<Genero>Comedia</Genero>
+		</Generos>
+		<Clasificacion>autorizada para mayores de 16 años</Clasificacion>
+		<Imagen></Imagen>
+	</Pelicula>
+	<Pelicula>
+		<Titulo>Película 2</Titulo>
+		<TituloOriginal></TituloOriginal>
+		<Pais>España</Pais>
+		<Año>2003</Año>
+		<Duracion>93 min</Duracion>
+		<Director>Alguien Reconocido</Director>
+		<Interpretes>
+			<Interprete>El primero</Interprete>
+			<Interprete>El segundo</Interprete>
+			<Interprete>La tercera</Interprete>
+			<Interprete>La cuarta</Interprete>
+			<Interprete>El quinto</Interprete>
+			<Interprete>La sexta</Interprete>
+		</Interpretes>
+		<Descripcion>El otro día fue un día de los muchos días que hay.</Descripcion>
+		<Enlace>https://www.la-pelicula-2.es/</Enlace>
+		<Generos>
+			<Genero>Comedia</Genero>
+		</Generos>
+		<Clasificacion>tp</Clasificacion>
+		<Imagen>la-pelicula-2.webp</Imagen>
+	</Pelicula>
+	<Pelicula>
+		<Titulo>La Película 3</Titulo>
+		<TituloOriginal>The Movie 3</TituloOriginal>
+		<Pais>EEUU</Pais>
+		<Año>2003</Año>
+		<Duracion>93 min</Duracion>
+		<Director>Random Human</Director>
+		<Interpretes>
+			<Interprete>The first</Interprete>
+			<Interprete>The second</Interprete>
+			<Interprete>The third</Interprete>
+		</Interpretes>
+		<Descripcion>La secuela de The Movie 2</Descripcion>
+		<Enlace></Enlace>
+		<Generos>
+			<Genero>Comedia</Genero>
+		</Generos>
+		<Clasificacion>8</Clasificacion>
+		<Imagen></Imagen>
+	</Pelicula>
+	<Pelicula>
+		<Titulo>La Panadería</Titulo>
+		<TituloOriginal>La Boulangerie</TituloOriginal>
+		<Pais>Francia</Pais>
+		<Año>2003</Año>
+		<Duracion>93 min</Duracion>
+		<Director>Les Humains</Director>
+		<Interpretes>
+			<Interprete>Un</Interprete>
+			<Interprete>Deux</Interprete>
+			<Interprete>Trois</Interprete>
+		</Interpretes>
+		<Descripcion>La historia de cómo un joven hacía pan</Descripcion>
+		<Enlace>https://www.laboulangerie.fr/</Enlace>
+		<Generos>
+			<Genero>Drama</Genero>
+			<Genero>Romántica</Genero>
+		</Generos>
+		<Clasificacion>12</Clasificacion>
+		<Imagen>laboulangerie.webp</Imagen>
+	</Pelicula>
+	<Pelicula>
+		<Titulo>Quinta Película</Titulo>
+		<TituloOriginal>Femte Film</TituloOriginal>
+		<Pais>Suecia</Pais>
+		<Año>2003</Año>
+		<Duracion>93 min</Duracion>
+		<Director>Människen</Director>
+		<Interpretes>
+			<Interprete>En</Interprete>
+			<Interprete>Två</Interprete>
+			<Interprete>Tre</Interprete>
+		</Interpretes>
+		<Descripcion>Final de la saga Film</Descripcion>
+		<Enlace>https://www.film.se/</Enlace>
+		<Generos>
+			<Genero>Comedia</Genero>
+			<Genero>Acción</Genero>
+			<Genero>Histórico</Genero>
+		</Generos>
+		<Clasificacion>18</Clasificacion>
+		<Imagen></Imagen>
+	</Pelicula>
+</Cartelera>
