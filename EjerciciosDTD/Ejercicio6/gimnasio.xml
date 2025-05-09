@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gimnasio SYSTEM "gimnasio.dtd">
+<gimnasio>
+	<!-- Los ID del tipo 001,002... tienen que ir con el prefijo 'id_' o 'x':
+	Referencia: https://stackoverflow.com/a/25258374 -->
+	<persona id="id_001" genero="femenino">
+		<nombre>Segundo</nombre>
+		<apellido>Pascual</apellido>
+		<telefono>6XXXXXXXX</telefono>
+		<telefono>95XXXXXXX</telefono>
+		<email>User1@gmail.com</email>
+		<email>User2@gmail.com</email>
+		<email>User3@gmail.com</email>
+		<socio>Sí</socio>
+	</persona>
+	<persona id="id_002" genero="masculino">
+		<nombre>Obdulia</nombre>
+		<apellido>Toledo</apellido>
+		<email>Carmen@uma.es</email>
+		<socio>No</socio>
+	</persona>
+</gimnasio>

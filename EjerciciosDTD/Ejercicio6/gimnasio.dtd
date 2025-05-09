@@ -1,0 +1,9 @@
+<!ELEMENT gimnasio (persona)+>
+<!ELEMENT persona (nombre, apellido+, telefono*, email+, socio)>
+<!ATTLIST persona id ID #REQUIRED>
+<!ATTLIST persona genero(masculino|femenino) #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT socio (#PCDATA)>
