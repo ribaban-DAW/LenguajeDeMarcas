@@ -1,0 +1,3 @@
+<!ELEMENT baya (nombre, color, sabor)>
+
+<!ELEMENT valla (material, altura, longitud)>

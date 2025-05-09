@@ -1,0 +1,5 @@
+<!ELEMENT tienda (nombre)>
+<!ATTLIST tienda id ID #REQUIRED>
+
+<!ELEMENT ordenador (componente)+>
+<!ATTLIST ordenador mac ID #REQUIRED>

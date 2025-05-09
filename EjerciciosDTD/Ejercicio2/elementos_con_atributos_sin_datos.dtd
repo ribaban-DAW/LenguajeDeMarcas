@@ -1,0 +1,5 @@
+<!ELEMENT vehiculo EMPTY>
+<!ATTLIST vehiculo matricula CDATA #REQUIRED>
+
+<!ELEMENT lapiz EMPTY>
+<!ATTLIST lapiz tipo CDATA>
