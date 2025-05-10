@@ -1,0 +1,56 @@
+Sobre el documento “equipos.xml” realizad las siguientes cuestiones:
+
+1. Construir una expresión XPATH que nos permita extraer todos los elementos nombre de todos los futbolistas (nodos completos).
+//jugador/nombre
+
+2. Construir una expresión XPATH que permita recuperar todos los nodos elemento del documento XML.
+/*
+
+3. Construir una expresión XPATH que permita recuperar todos los nodos atributo que contienen la marca del patrocinador de cada futbolista.
+//jugador/patrocinador/@marca
+
+4. Construir una expresión XPATH que nos permita extraer todos los elementos nombre de todos los futbolistas del “Real Madrid”.
+//equipo[@nombre=”Real Madrid”]/jugador/nombre
+
+5. Construir una expresión XPATH que nos permita seleccionar los nodos de texto con los nombres de los distintos futbolistas.
+//jugador/nombre/text()
+
+6. Construir una expresión XPATH que nos permita seleccionar todos los elementos (de cualquier tipo) descendientes del elemento equipo.
+//equipo/*
+
+7. Construir una expresión XPATH que nos permita extraer todos los nodos elementos nombre de todos los futbolistas con menos de 25 años.
+//jugador/[number(edad)<25]/nombre
+
+8. Construir una expresión XPATH que nos permita extraer todos los nodos elementos nombre de todos los futbolistas que contienen el atributo extranjero, independientemente del valor para dicho atributo.
+//jugador[@extranjero]/nombre
+
+9. Construir una expresión XPATH que nos permita extraer todos los nodos elementos nombre de todos los futbolistas que NO contienen el atributo extranjero, independientemente del valor para dicho atributo.
+//jugador[not(nombre=//jugador[@extranjero]/nombre)]/nombre
+
+10. Construir una expresión XPATH que nos permita extraer todos los nodos atributo patrocinador de todos los futbolistas que son extranjeros, y que además su edad sea superior a 23 años.
+//jugador[@extranjero="si" and number(edad)>23]/patrocinador/@*
+
+11. Construir una expresión XPATH que nos permita seleccionar el nodo elemento que se corresponde con el último de los equipos que aparecen en el documento XML.
+//equipo[last()]
+
+12. Construir una expresión XPATH que nos permita seleccionar el nodo elemento que se corresponde con el segundo jugador de los equipos que aparecen en el documento
+XML.
+//equipo/jugador[position()=2]
+
+13. Seleccionar todos los elementos (de cualquier tipo, incluido texto) que sean descendientes de jugador.
+//jugador/*
+
+14. Seleccionar sólo los elementos que sean descendientes de jugador.
+//jugador/*
+
+15. Seleccionar sólo los elementos de texto que se corresponden con la edad de los jugadores.
+//jugador/edad/text()
+
+16. Para cada jugador, mostrar el nombre del jugador seguido de dos guiones y su posición.
+//jugador/concat(nombre, ' -- ', posicion)
+
+17. Construir una expresión XPATH que nos permita seleccionar el nodo elemento que se corresponde con el segundo jugador de los equipos que aparecen en el documento XML.
+//equipo/jugador[position()=2]
+
+18. Selecciona los nodos comentario que hay en el documento XML.
+//comment()
