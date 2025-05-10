@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="agenda">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="contacto" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="contacto">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre_apellidos" type="nombre" />
+				<xs:element name="telefono" type="telefono" />
+				<xs:element name="edad" type="xs:unsignedInt" />
+				<xs:element name="email" type="email" />
+				<xs:element name="direccion" type="direccion" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="nombre">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([a-zA-ZáéíóúÁÉÍÓÚñ]+\s*)+" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="telefono">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{6}x{3}" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="email">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z\.\-_\d]*@\w*\.\w{2,3}" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="direccion">
+		<xs:sequence>
+			<xs:element name="calle" type="calle" />
+			<xs:element name="cod_post" type="cod_post" />
+			<xs:element name="provincia" type="nombre" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="calle">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([a-zA-ZáéíóúÁÉÍÓÚñ]+\s*)+\d+" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="cod_post">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{5}" />
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

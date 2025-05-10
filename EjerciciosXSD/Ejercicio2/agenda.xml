@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="agenda.xsd">
+	<contacto>
+		<nombre_apellidos>Francisco Ruiz González</nombre_apellidos>
+		<telefono>600222xxx</telefono>
+		<edad>39</edad>
+		<email>curro@gmail.com</email>
+		<direccion>
+			<calle>Cómpeta 16</calle>
+			<cod_post>12345</cod_post>
+			<provincia>Málaga</provincia>
+		</direccion>
+	</contacto>
+</agenda>
