@@ -1,0 +1,15 @@
+<!ELEMENT eventos (evento)+>
+<!ELEMENT evento (nombre, mes, lugar, duracion, organizador)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT lugar (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT organizador (nombre_o, profesion, fecha_nac, ciudad, telefono, email)>
+<!ELEMENT nombre_o (#PCDATA)>
+<!ELEMENT profesion (#PCDATA)>
+<!ELEMENT fecha_nac (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ATTLIST ciudad cp CDATA #REQUIRED>
+<!ELEMENT telefono EMPTY>
+<!ATTLIST telefono n CDATA #REQUIRED>
+<!ELEMENT email (#PCDATA)>

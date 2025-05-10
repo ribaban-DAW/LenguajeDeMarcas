@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="eventos.xsd">
+	<evento>
+		<nombre>Diverciencia</nombre>
+		<mes>Mayo</mes>
+		<lugar>Algeciras</lugar>
+		<duracion>1 semana</duracion>
+		<organizador>
+			<nombre_o>Juan Manuel C.</nombre_o>
+			<profesion>Matemático</profesion>
+			<fecha_nac>07/05/1960</fecha_nac>
+			<ciudad cp="29700">Málaga</ciudad>
+			<telefono n="666666666" />
+			<email>lm@prueba.com</email>
+		</organizador>
+	</evento>
+</eventos>
