@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="agenda">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" name="contacto">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nombre_apellidos" type="xs:string" />
+							<xs:element minOccurs="0" maxOccurs="2" name="telefono"
+								type="xs:unsignedInt" />
+							<xs:element name="edad" type="xs:unsignedByte" />
+							<xs:element minOccurs="1" maxOccurs="3" name="email" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
+<!--
+Responde a las siguientes preguntas, argumentando el resultado:
+
+a) ¿Podrías añadir 7 contactos más a la agenda?
+
+	Sí, porque no hay un máximo como bien especifica 'maxOccurs' con el valor
+	'unbounded'.
+
+b) Si un usuario deja el campo teléfono sin rellenar, ¿estaría bien?
+
+	Depende, si se refiere a dejar el elemento vacío: <telefono />, entonces no,
+	porque tiene el tipo 'unsignedInt', así que no se puede dejar sin rellenar,
+	de lo contrario daría un error.
+	Pero si se refiere a no tener ningún campo teléfono, entonces sí, porque
+	es opcional ya que 'minOccurs' es 0.
+
+c) El usuario Ataulfo dispone de dos teléfonos móviles y uno fijo, ¿podrían añadirse todos en el
+XML?
+
+	No, porque como máximo puede haber 2 teléfonos como se especifica en 'maxOccurs',
+	independientemente si son fijos o móviles.
+
+d) ¿Cuántos correos electrónicos, como máximo y mínimo, hay que introducir?
+
+	Mínimo 1 y máximo 3, son los valores especificados en 'minOccurs' y 'maxOccurs'.
+
+e) ¿De qué tipo es el campo edad?
+
+	Del tipo 'unsignedByte' que toma valores del 0-255.
+-->
